@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity(), IPostAdapter {
         adapter.stopListening()
     }
 
-    override fun onLikeClicked(postId: String) {
+    override fun onChatClicked(postId: String) {
         postDao.updateLikes(postId)
         GlobalScope.launch(Dispatchers.IO) {
             val post = postDao.getPostById(postId).await().toObject(Post::class.java)
@@ -65,7 +65,6 @@ class MainActivity : AppCompatActivity(), IPostAdapter {
             val builder = CustomTabsIntent.Builder()
             val customTabsIntent = builder.build()
         customTabsIntent.launchUrl(this@MainActivity, Uri.parse(url))
-            finish()
         }
     }
 

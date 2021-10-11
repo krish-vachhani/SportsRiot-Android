@@ -26,7 +26,7 @@ class PostAdapter(options: FirestoreRecyclerOptions<Post>, private val listener:
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostViewHolder {
         val viewHolder= PostViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_post,parent,false))
         viewHolder.chatButton.setOnClickListener {
-            listener.onLikeClicked(snapshots.getSnapshot(viewHolder.bindingAdapterPosition).id)
+            listener.onChatClicked(snapshots.getSnapshot(viewHolder.bindingAdapterPosition).id)
         }
         return viewHolder
     }
@@ -44,5 +44,5 @@ class PostAdapter(options: FirestoreRecyclerOptions<Post>, private val listener:
 
 }
 interface IPostAdapter{
-    fun onLikeClicked(postId:String)
+    fun onChatClicked(postId:String)
 }
