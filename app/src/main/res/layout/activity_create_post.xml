@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#293855"
     tools:context=".CreatePostActivity">
 
     <EditText
@@ -14,6 +15,7 @@
         android:background="@drawable/edittext_round_shape"
         android:gravity="top"
         android:elevation="50dp"
+        android:backgroundTint="@color/white"
         android:hint="Enter Address And The Date And Time..."
         android:padding="12dp"
         android:textColor="#000000"
@@ -29,6 +31,7 @@
         android:layout_margin="12dp"
         android:background="@drawable/edittext_round_shape"
         android:gravity="top"
+        android:backgroundTint="@color/white"
         android:hint="Enter the name of the sport"
         android:padding="12dp"
         android:textColor="#000000"
@@ -40,6 +43,7 @@
     <EditText
         android:id="@+id/phoneNumberInput"
         android:layout_width="0dp"
+        android:backgroundTint="@color/white"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:background="@drawable/edittext_round_shape"
@@ -59,8 +63,9 @@
         android:layout_margin="12dp"
         android:background="@drawable/edittext_round_shape"
         android:text="POST"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
+        android:backgroundTint="#552938"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/phoneNumberInput" />
