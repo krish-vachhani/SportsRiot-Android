@@ -3,8 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    app:cardCornerRadius="18dp"
+    android:elevation="50dp"
+    android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginTop="16dp">
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -54,8 +59,8 @@
 
         <ImageView
             android:id="@+id/chatButton"
-            android:layout_width="50dp"
-            android:layout_height="28dp"
+            android:layout_width="46dp"
+            android:layout_height="24dp"
             android:layout_marginLeft="56dp"
             android:src="@drawable/ic_baseline_chat_24"
             app:layout_constraintLeft_toLeftOf="@id/chatText"
@@ -68,7 +73,7 @@
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textColor="#000000"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/chatButton"
             app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +86,7 @@
 
             android:text="Chat:"
             android:textColor="#000000"
-            android:textSize="22sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/chatButton"
             app:layout_constraintStart_toStartOf="parent"

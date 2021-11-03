@@ -13,6 +13,7 @@
         android:layout_margin="12dp"
         android:background="@drawable/edittext_round_shape"
         android:gravity="top"
+        android:elevation="50dp"
         android:hint="Enter Address And The Date And Time..."
         android:padding="12dp"
         android:textColor="#000000"
