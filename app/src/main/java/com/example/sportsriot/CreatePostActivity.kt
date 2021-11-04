@@ -32,7 +32,6 @@ class CreatePostActivity : AppCompatActivity() {
         phoneNumberInput = findViewById(R.id.phoneNumberInput)
         postDao = PostDao()
         userDao = UserDao()
-
         postButton.setOnClickListener {
 
             GlobalScope.launch{

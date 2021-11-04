@@ -3,6 +3,7 @@ package com.example.sportsriot
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.browser.customtabs.CustomTabsIntent
@@ -44,6 +45,7 @@ class MainActivity : AppCompatActivity(), IPostAdapter {
         adapter = PostAdapter(recyclerViewOptions,this)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.itemAnimator=null
     }
 
     override fun onStart() {
@@ -64,7 +66,7 @@ class MainActivity : AppCompatActivity(), IPostAdapter {
             val url = "https:/wa.me/91$userPhoneNumber"
             val builder = CustomTabsIntent.Builder()
             val customTabsIntent = builder.build()
-        customTabsIntent.launchUrl(this@MainActivity, Uri.parse(url))
+            customTabsIntent.launchUrl(this@MainActivity, Uri.parse(url))
         }
     }
 

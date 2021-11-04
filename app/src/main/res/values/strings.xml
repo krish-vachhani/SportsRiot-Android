@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Sports Riot</string>
     <string name="finding_a_sports_buddy_has_never_been_easier">Finding A Sports Buddy Has Never Been Easier.</string>
-    <string name="enter_address_and_the_date_and_time">Enter Address And The Date And Time...</string>
-    <string name="enter_the_name_of_the_sport">Enter the name of the sport</string>
-    <string name="enter_your_phone_number_with_whatsapp">Enter Your Phone Number With WhatsApp</string>
-    <string name="post">POST</string>
     <string name="add_post">add_post</string>
     <string name="textview">TextView</string>
     <string name="chat">Chat:</string>
+    <string name="post">POST</string>
+    <string name="enter_your_phone_number_with_whatsapp">Enter Your Phone Number With WhatsApp</string>
+    <string name="enter_the_name_of_the_sport">Enter the name of the sport</string>
+    <string name="enter_address_and_the_date_and_time">Enter Address And The Date And Time...</string>
 </resources>
