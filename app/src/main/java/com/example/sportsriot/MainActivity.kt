@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity(), IPostAdapter {
         Log.d("Start","Main Activity Started")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.hide()
         fab = findViewById(R.id.fab)
         postDao = PostDao()
         recyclerView = findViewById(R.id.recyclerView)

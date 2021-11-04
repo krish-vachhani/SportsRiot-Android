@@ -25,6 +25,7 @@ class CreatePostActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_post)
+        supportActionBar?.hide()
         auth = Firebase.auth
         postButton = findViewById(R.id.postButton)
         postInput = findViewById(R.id.postInput)
